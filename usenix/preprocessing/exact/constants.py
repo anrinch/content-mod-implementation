@@ -1,0 +1,8 @@
+
+DEBUG = 0
+VERBOSE = 0
+LOG_RESULTS = True
+CONSOLE_OUTPUT = False
+TEST_MATCH = False
+TEST_QUERY = True
+

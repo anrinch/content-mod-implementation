@@ -1,0 +1,50 @@
+// taking the hello world example so that I can create a CMAKE file
+// and correctly link everything that I need
+
+syntax = "proto3";
+
+
+// The greeting service definition.
+package baseprotocol;
+
+//service EncryptedContentUpload {
+//  // stream the file up in chunks
+//  rpc UploadFile(stream FileUpload) returns (FileRecieved) {}
+//}
+
+service BasicStringServer {
+  rpc HandleUploadString(Ciphertext) returns (RecievedCipherText) {}
+}
+
+message Ciphertext {
+  bytes cprime = 1;
+  string iv = 2;
+  string c = 3;
+  int64 cprimeLength = 4;
+}
+
+message RecievedCipherText {
+  string msg = 1;
+}
+
+message FileUpload {
+  oneof file {
+    FileHeaderData  fhd = 1;
+    FileChunk fc = 2;
+    string foobar = 3;
+  }
+}
+
+message FileChunk {
+  bytes fileDataChunk = 1;
+} 
+
+message FileHeaderData {
+  string clientName = 1;
+  string filename = 2;
+  bytes iv = 3;
+  bytes c = 4;
+  //NTL uses long in the NumBits()
+  int64 numbitsinZZ = 5;
+}
+

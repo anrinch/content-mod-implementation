@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/arpi/Desktop/usenix/preprocessing/approx/build",
+  "command": "/usr/bin/c++ -Ddhf_core_EXPORTS -I/home/arpi/Desktop/usenix/preprocessing/approx/inc -fPIC -std=gnu++17 -o CMakeFiles/dhf_core.dir/src/DetectableHashFunction.cpp.o -c /home/arpi/Desktop/usenix/preprocessing/approx/src/DetectableHashFunction.cpp",
+  "file": "/home/arpi/Desktop/usenix/preprocessing/approx/src/DetectableHashFunction.cpp"
+},
+{
+  "directory": "/home/arpi/Desktop/usenix/preprocessing/approx/build",
+  "command": "/usr/bin/c++ -Ddhf_EXPORTS -I/home/arpi/Desktop/usenix/preprocessing/approx/inc -isystem /home/arpi/Desktop/dhftest/dhftest/dhfpython/lib/python3.10/site-packages/pybind11/include -isystem /usr/include/python3.10 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++17 -o CMakeFiles/dhf.dir/src/dhf_bindings.cpp.o -c /home/arpi/Desktop/usenix/preprocessing/approx/src/dhf_bindings.cpp",
+  "file": "/home/arpi/Desktop/usenix/preprocessing/approx/src/dhf_bindings.cpp"
+},
+{
+  "directory": "/home/arpi/Desktop/usenix/preprocessing/approx/build",
+  "command": "/usr/bin/c++  -I/home/arpi/Desktop/usenix/preprocessing/approx/inc -std=gnu++17 -o CMakeFiles/dhf_main.dir/src/main.cpp.o -c /home/arpi/Desktop/usenix/preprocessing/approx/src/main.cpp",
+  "file": "/home/arpi/Desktop/usenix/preprocessing/approx/src/main.cpp"
+}
+]
